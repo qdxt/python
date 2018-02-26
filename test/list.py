@@ -8,7 +8,7 @@
 list = ['abcd',786,2.23,True,'hello']
 tinylist = [123,'hello']
 print(list)#['abcd',786,2.23,True,'hello']
-#注意一下例子：
+# #注意一下例子：
 print(list[0])#'abcd'
 print(type(list[0]))#str
 print(list[1:3])#[786,2.23]
@@ -27,3 +27,36 @@ list[2:5] = [12,13,14]
 print('再次改变后的list:',list)
 list[2:5] = []#将对应的元素值设置为[]
 print('最后的list:',list)
+
+#================分割线==========================
+#list中的方法
+a = ['I','like','python']
+#反转方法1
+# print(a[::-1]) #['python', 'like', 'I']
+#反转方法2 需要把上面的list变量注释
+# print(list(reversed(a))) #['python', 'like', 'I']
+# print(list(reversed("abcd"))) #['d', 'c', 'b', 'a']
+
+list1 = ['good','python','i']
+list1.append('like')
+list1.append(100)
+list1[len(list1):] = [5]
+print(list1)
+print(len(list1))
+
+#================分割线==========================
+
+la = [1,2,3]
+lb = [4,'5',6,True]
+la.extend(lb)# [1,2,3,4,'5',True]
+c = 5
+la.extend(c)# 报错，如果extend的对象是数值型，则报错
+
+#看看extend 和append的区别
+laa = [1,2,3]
+lbb = ['456']
+laa.extend(lbb)#[1,2,3,'4','5','6']
+lcc = ['456']
+laa.append(lcc)#[1,2,3,['456']]
+#append是整体的追加，extend是个体化圹编
+
