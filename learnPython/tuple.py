@@ -10,6 +10,7 @@ print(tuple[1:3])#(782,2.23)
 print(tuple[2:])#(2.23,'runoob',70.2)
 print(tinytuple*2)#(123,'runoob',123,'runoob')
 print(tuple+tinytuple)#('abcd',782,2.23,'runoob',70.2,123,'runoob')
+tuple[2] = 123; #错误
 
 #================分割线==========================
 #元组与字符串类似，可以被索引且下标索引从0开始，-1从末尾开始的位置，也可以进行截取
