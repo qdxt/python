@@ -27,3 +27,15 @@ print(r'Ru\noob')#Ru\noob
 # word = 'python'
 # word[0]='c'
 # print(word)#报错
+
+a = "hello"
+b = "world"
+if("h" in a):
+    print('h in a')
+
+
+print(a.capitalize(),'首字母大写')
+print(a.center(10),'字符串居中显示')
+print(a.count('l'))#返回 str 在 string 里面出现的次数，
+print(a.find('0'))
+
