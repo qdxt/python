@@ -19,6 +19,8 @@ print(tinydict.values())# 输出所有值
 # dict([('Runoob', 1), ('Google', 2), ('Taobao', 3)])
 # {'Taobao': 3, 'Runoob': 1, 'Google': 2}
 # {x: x**2 for x in (2, 4, 6)}
+
+
 # {2: 4, 4: 16, 6: 36}
 # dict(Runoob=1, Google=2, Taobao=3)
 # {'Taobao': 3, 'Runoob': 1, 'Google': 2}
@@ -27,3 +29,28 @@ print(tinydict.values())# 输出所有值
 #1、字典是一种映射类型，它的元素是键值对
 #2、字典的关键字必须为不可变类型，且不能重复
 #3、创建空字典用{}
+
+lingdu ={
+    "name":'lingdu',
+    "age":25,
+    "sex":'men'
+}
+print(lingdu["name"])
+
+lingdu.clear()  #清空字典所有条目
+print(lingdu)  #{}空字典
+
+
+#不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住
+
+dicta = {'Name': 'Zara', 'Age': 7, 'Name': 'Manni'};
+print(dicta["Name"]) #Manni
+seq = {'name','age','sex'}
+dicta = dicta.fromkeys(seq,10)
+print(dicta,'hello')
+
+#键必须不可变，所以可以用数，字符串或元组充当，所以用列表就不行
+
+dictc = {['Name']: 'Zara', 'Age': 7};
+ 
+print ("dict['Name']: ", dictc['Name']); 
