@@ -3,10 +3,8 @@ for index in range(len(fruits)):
     print('当前水果:',fruits[index])# banana apple mango
 
 
-
 for number in range(3):
     print('当前索引:',number)# 0 1 2
-
 
 for num in range(10,20):
     for i in range(2,num):
