@@ -61,3 +61,23 @@ class son2(father):
 s = son2()
 
 s.speak()# I can speak!
+
+
+# 定义一个鸟类
+class Bird(object):
+    have_feather = True
+    way_of_reproduction = 'egg'
+
+summer = Bird();#小鸡当作对象
+
+print(summer.way_of_reproduction)#egg
+
+class Animal():
+    def move(self,dx,dy):
+        position = [0,0]
+        position[0] = position[0]+dx
+        position[1] = position[1]+dy
+        return position
+dog = Animal()
+
+print('after mover:',dog.move(5,8))
