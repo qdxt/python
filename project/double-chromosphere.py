@@ -36,7 +36,7 @@ def outputNumber():
     else:
         listNumber.append(random.randint(1, 33))
         listNumber.append(random.randint(1,16))
-    print('本期双色球为：',listNumber,'随机',random.randint(1,100),'注',random.randint(1,100),'倍')
+    print('本期双色球为：',listNumber,'随机',1,'注',1,'倍')
 
 def inputNumber():
     iList = []
